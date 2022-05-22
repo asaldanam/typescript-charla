@@ -1,0 +1,15 @@
+{
+  "name": "typescript-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc examples/* --watch --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asaldanam",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
