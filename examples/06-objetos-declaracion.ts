@@ -3,7 +3,7 @@
 // Podemos usar estos tipos independientemente de la forma que
 // estemos creandoe el objeto con Javascript:
 
-import { UserInterface } from "./04-objetos-definicion";
+import { UserInterface } from "./05-objetos-definicion";
 
 export class User {
   id: number;

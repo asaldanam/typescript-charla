@@ -15,12 +15,17 @@ export function createOption<V extends string | number>(value: V, text: string) 
 
 // El tipo del parámetro ha sido inferido a "value" gracias al Generic
 
-const option1 = createOption(1, 'bulbasaur');
+export const option1 = createOption(1, 'bulbasaur');
 option1.value.toFixed();
 option1.value.length; 
 
-const option2 = createOption('a', 'bulbasaur');
-option2.value.length;
+export const option2 = createOption('a', 'bulbasaur');
+option2.value === 'b';
+
+// Si queremos darle un tipo más genérico o concreto, podemos hacerlo
+// pasándolo como "diamante"
+export const option3 = createOption<string>('a', 'bulbasaur');
+option3.value === 'b';
 
 // Esto mismo podemos aplicarlo a los tipos, además que podemos declarar tantos
 // generics como deseemos:
